@@ -195,3 +195,21 @@ $(document).ready(function()
 	}
 
 });
+
+// JavaScript to add 'active' class to the current link in the navbar
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Get all 'a' elements
+    var navLinks = document.querySelectorAll('.main_nav a');
+
+    // Listen for a click event on each link
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Remove 'active' class from all links
+            navLinks.forEach(el => {
+                el.parentElement.classList.remove('active');
+            });
+            // Add 'active' class to the clicked link's parent element
+            this.parentElement.classList.add('active');
+        });
+    });
+});

@@ -119,11 +119,13 @@ p a:hover::after
 }
 ::selection
 {
-	
+	background: #ffb3b3; /* Light red background */
+  	color: #fff; /* White text */
 }
 p::selection
 {
-	
+	background: #b3d4fc; /* Light blue background */
+  	color: #000; /* Black text */
 }
 h1{font-size: 48px;}
 h2{font-size: 36px;}
@@ -144,7 +146,8 @@ h4::selection,
 h5::selection, 
 h6::selection
 {
-	
+	background: #ffb3b3; /* Light red background */
+  	color: #fff; /* White text */
 }
 .form-control
 {
@@ -707,6 +710,21 @@ section
 	margin-right: auto;
 	margin-top: 33px;
 }
+
+@media (max-width: 768px) {
+	.home_title {
+	  font-size: 40px; /* Smaller font size for smaller screens */
+	  line-height: 1.2; /* Adjust line height to ensure it fits */
+	}
+	.home_text {
+	  font-size: 16px; /* Smaller font size for smaller screens */
+	  padding-left: 20px; /* Less padding for smaller screens */
+	  padding-right: 20px; /* Less padding for smaller screens */
+	}
+	.home_content {
+	  top: 20%; /* Adjust top position for smaller screens */
+	}
+  }
 
 /*********************************
 6. Event

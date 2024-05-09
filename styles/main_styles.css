@@ -1825,3 +1825,7 @@ h3.event_day, h4.event_month, h5.event_year {
 	margin-bottom: 0; /* Adjust or remove the bottom margin */
 	object-fit: cover;
 }
+
+.centered-text {
+    text-align: center;
+}

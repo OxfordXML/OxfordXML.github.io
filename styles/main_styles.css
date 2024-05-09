@@ -79,6 +79,8 @@ p
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-align: justify;
+	text-justify: inter-word;
 }
 p a
 {
@@ -812,6 +814,7 @@ h3.event_day, h4.event_month, h5.event_year {
 	/* Ensure the text and other content are centered and have padding to prevent cropping */
     text-align: flex-start;
     padding: 0 10px;
+	width: 85%;
 }
 .event_title,
 .event_title a

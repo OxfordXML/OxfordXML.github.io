@@ -937,7 +937,7 @@ h3.event_day, h4.event_month, h5.event_year {
 .about_content
 {
 	padding-left: 30px;
-	padding-top: 11px;
+	padding-top: 0px;
 }
 .about_button
 {
@@ -1828,4 +1828,31 @@ h3.event_day, h4.event_month, h5.event_year {
 
 .centered-text {
     text-align: center;
+}
+
+.about-section {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+}
+
+.about-description {
+    font-size: 16px; /* Adjust to your preference */
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.committee-title {
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.committee-list {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+}
+
+.committee-list li {
+    margin-bottom: 10px;
+    font-size: 16px; /* Consistent with description for harmony */
 }

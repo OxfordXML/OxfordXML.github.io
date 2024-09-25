@@ -697,6 +697,7 @@ section
 	letter-spacing: 0.03em;
 	color: #FFFFFF;
 	line-height: 1.18;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds shadow */
 }
 .home_text
 {
@@ -705,6 +706,7 @@ section
 	padding-left: 70px;
 	padding-right: 70px;
 	margin-top: 27px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Adds a lighter shadow */
 }
 .home_link
 {
@@ -1801,7 +1803,7 @@ h3.event_day, h4.event_month, h5.event_year {
 
     .upcoming_image {
         width: 270px; /* Fixed width on desktop */
-        height: 350px; /* Fixed height on desktop */
+        height: 370px; /* Fixed height on desktop */
         object-fit: cover;
     }
 

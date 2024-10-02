@@ -924,6 +924,11 @@ h3.event_day, h4.event_month, h5.event_year {
 	font-style: italic;
 	margin-top: 5px;
 }
+.about_text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
 .about_row
 {
 	margin-top: 52px;
@@ -938,6 +943,7 @@ h3.event_day, h4.event_month, h5.event_year {
 }
 .about_content
 {
+	padding: 20px;
 	padding-left: 30px;
 	padding-top: 0px;
 }
@@ -1834,6 +1840,7 @@ h3.event_day, h4.event_month, h5.event_year {
 
 .about-section {
     font-family: Arial, sans-serif;
+	padding: 10px;
     margin: 0px;
 }
 
@@ -1844,17 +1851,22 @@ h3.event_day, h4.event_month, h5.event_year {
 }
 
 .committee-title {
-    font-size: 20px;
-    padding-top: 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
+    text-align: left;
+    color: #000;
 }
 
 .committee-list {
+    padding-left: 0;
     list-style-type: none; /* Removes bullet points */
-    padding: 0;
+    margin-bottom: 20px;
 }
 
 .committee-list li {
-    margin-bottom: 10px;
-    font-size: 16px; /* Consistent with description for harmony */
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
 }

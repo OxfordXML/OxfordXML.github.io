@@ -222,6 +222,9 @@ section
 {
 	height: 100%;
 }
+.container {
+	max-width: 1300px;
+}
 .super_container
 {
 	width: 100%;
@@ -1808,8 +1811,8 @@ h3.event_day, h4.event_month, h5.event_year {
     }
 
     .upcoming_image {
-        width: 270px; /* Fixed width on desktop */
-        height: 370px; /* Fixed height on desktop */
+        width: 320px; /* Fixed width on desktop */
+        height: 420px; /* Fixed height on desktop */
         object-fit: cover;
     }
 

@@ -1873,3 +1873,12 @@ h3.event_day, h4.event_month, h5.event_year {
     border-bottom: 1px solid #ddd;
     font-size: 16px;
 }
+.bio-abstract {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bio-abstract + p {
+    margin-top: 0; /* Adds a smaller space between the heading and the following paragraph */
+    margin-bottom: 1.5em; /* Adjusts the bottom margin of the paragraph */
+}

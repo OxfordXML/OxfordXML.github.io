@@ -1508,241 +1508,77 @@ h3.event_day, h4.event_month, h5.event_year {
 /*********************************
 15. Footer
 *********************************/
+/* Base styles remain the same */
+.footer {
+    display: block;
+    position: relative;
+    background-color: gray;
+    padding: 20px 0;
+}
 
-.footer
-{
-	display: block;
-	position: relative;
+/* Contact Section Styling */
+.footer_contact_column {
+    padding-top: 54px;
 }
-.footer_background
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+
+.footer_contact ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    line-height: 1.5;
 }
-.footer_contact_column
-{
-	padding-top: 54px;
+
+.footer_contact ul li div i {
+    color: #b10707; /* Red icon color */
 }
-.footer_logo,
-.footer_logo_text
-{
-	display: inline-block;
+
+.footer_contact ul li span {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-left: 7px;
 }
-.footer_logo
-{
-	width: 60px;
-	height: 60px;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
+
+/* Link Specific Styles within Footer Contact */
+.footer_contact a {
+    color: #00bfff; /* Light blue links */
+    font-weight: bold;
+    text-decoration: underline;
 }
-.footer_logo img
-{
-	max-width: 100%;
+
+.footer_contact a:hover {
+    color: #1e90ff; /* Darker blue on hover */
+    text-decoration: none;
 }
-.footer_logo_text
-{
-	font-size: 30px;
-	font-weight: 700;
-	text-transform: uppercase;
-	line-height: 0.75;
-	color: #FFFFFF;
-	vertical-align: middle;
-	margin-left: 7px;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
+
+/* Footer logo and other text styles */
+.footer_logo_text {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 0.75;
+    color: #FFFFFF;
+    margin-left: 7px;
 }
-.footer_contact
-{
-	margin-top: 33px;
+
+.footer_links_list li a {
+    font-size: 14px;
+    color: #FFFFFF;
+    transition: all 200ms ease;
 }
-.footer_contact ul li:not(:last-child)
-{
-	margin-bottom: 7px;
+
+.footer_links_list li a:hover {
+    color: #b10707;
 }
-.footer_contact ul li div
-{
-	display: inline-block;
-	width: 14px;
-	height: 14px;
+
+/* Copyright Styling */
+.copyright_container {
+    width: 100%;
+    height: 68px;
+    border-top: solid 1px rgba(235,235,235,0.15);
+    color: #ccc;
+    text-align: center;
 }
-.footer_contact ul li div i
-{
-	color: #b10707;
-}
-.footer_contact ul li span
-{
-	font-size: 14px;
-	color: #FFFFFF;
-	margin-left: 7px;
-}
-.footer_links
-{
-	padding-top: 70px;
-	padding-left: 70px;
-	padding-right: 70px;
-}
-.footer_title
-{
-	font-size: 18px;
-	color: #FFFFFF;
-	line-height: 0.75;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-.footer_links_list
-{
-	columns: 2;
-	-webkit-columns: 2;
-  	-moz-columns: 2;
-  	margin-top: 32px;
-}
-.footer_links_list li
-{
-	margin-bottom: 11px;
-}
-.footer_links_list li a
-{
-	font-size: 14px;
-	color: #FFFFFF;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.footer_links_list li a:hover
-{
-	color: #b10707;
-}
-.footer_links_list li a i
-{
-	color: #b10707 !important;
-}
-.footer_subscribe
-{
-	padding-top: 70px;
-}
-.footer_text
-{
-	font-size: 14px;
-	color: #FFFFFF;
-	line-height: 1.71;
-	margin-top: 32px;
-}
-.footer_form_container
-{
-	margin-top: 30px;
-}
-.subscribe_input
-{
-	width: 100%;
-	height: 40px;
-	border: solid 1px rgba(235,235,235,0.15);
-	border-radius: 3px;
-	background: transparent;
-	padding-left: 22px;
-	outline: none;
-	color: #FFFFFF;
-}
-.subscribe_input::-webkit-input-placeholder
-{
-	font-size: 14px !important;
-	font-weight: 400 !important;
-	color: #c0c0c0 !important;
-}
-.subscribe_input:-moz-placeholder
-{
-	font-size: 14px !important;
-	font-weight: 400 !important;
-	color: #c0c0c0 !important;
-}
-.subscribe_input::-moz-placeholder
-{
-	font-size: 14px !important;
-	font-weight: 400 !important;
-	color: #c0c0c0 !important;
-} 
-.subscribe_input:-ms-input-placeholder
-{ 
-	font-size: 14px !important;
-	font-weight: 400 !important;
-	color: #c0c0c0 !important;
-}
-.subscribe_input::input-placeholder
-{
-	font-size: 14px !important;
-	font-weight: 400 !important;
-	color: #c0c0c0 !important;
-}
-.subscribe_button
-{
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100px;
-	height: 40px;
-	background: #FFFFFF;
-	border: none;
-	outline: none;
-	border-top-right-radius: 3px;
-	border-bottom-right-radius: 3px;
-	font-size: 12px;
-	color: #b10707;
-	font-weight: 700;
-	text-transform: uppercase;
-	cursor: pointer;
-}
-.subscribe_button:hover
-{
-	background: #b10707;
-	color: #FFFFFF;
-}
-.copyright_row
-{
-	margin-top: 58px;
-}
-.copyright_container
-{
-	width: 100%;
-	height: 68px;
-	border-top: solid 1px rgba(235,235,235,0.15);
-}
-.footer_social ul
-{
-	margin-right: -10px;
-}
-.footer_social ul li
-{
-	display: inline-block;
-}
-.footer_social ul li:not(:last-child)
-{
-	margin-right: 8px;
-}
-.footer_social ul li a i
-{
-	font-size: 15px;
-	padding: 10px;
-	color: #FFFFFF;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.footer_social ul li a i:hover
-{
-	color: #b10707;
-}
+
 @media only screen and (max-width: 768px) {
   .event_date {
     /* Adjust the width and font size of the date to fit smaller screens */

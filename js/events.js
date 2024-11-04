@@ -213,3 +213,43 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 });
+
+// Function to toggle the section's height dynamically
+function toggleSection(yearId) {
+    var section = document.getElementById(yearId);
+
+    if (section.classList.contains('expanded')) {
+        // Collapse the section
+        section.style.transitionDuration = '0.5s'; // Reset to default duration for collapsing
+        section.style.maxHeight = '0';
+        section.classList.remove('expanded');
+    } else {
+        // Calculate a dynamic duration based on the scrollHeight
+        const height = section.scrollHeight;
+        const duration = Math.min(1 + height / 1000, 3); // Set a cap on the duration (e.g., max 3s)
+        
+        section.style.transitionDuration = duration + 's';
+        section.style.maxHeight = height + 'px';
+        section.classList.add('expanded');
+
+        // Reset max-height after the transition to allow for future content changes
+        section.addEventListener('transitionend', function() {
+            if (section.classList.contains('expanded')) {
+                section.style.maxHeight = 'none';
+            }
+        }, { once: true });
+    }
+}
+
+// Run this code when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    const yearButtons = document.querySelectorAll('.year-toggle');
+
+    yearButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const yearId = this.getAttribute('data-year');
+            toggleSection(yearId); // Call the toggleSection function
+            this.classList.toggle('active');
+        });
+    });
+});

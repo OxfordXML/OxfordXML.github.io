@@ -1718,3 +1718,81 @@ h3.event_day, h4.event_month, h5.event_year {
     margin-top: 0; /* Adds a smaller space between the heading and the following paragraph */
     margin-bottom: 1.5em; /* Adjusts the bottom margin of the paragraph */
 }
+
+.year-toggle {
+    padding: 10px;
+    background-color: #b10707;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+    flex: 1; /* Make all buttons the same width */
+    text-align: center;
+}
+
+.year-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 20px; /* Space below the buttons */
+	margin-top: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	justify-content: center;
+}
+
+/* Button hover effect */
+.year-toggle:hover {
+    background-color: #8a0c0c; /* Slightly darker red for hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.year-toggle:focus,
+.year-toggle:active {
+    outline: none; /* Ensure outline is removed */
+    box-shadow: none; /* Remove any box-shadow */
+}
+
+.year-toggle:focus-visible {
+    outline: 2px solid #8a0c0c; /* Custom focus color */
+    outline-offset: 2px; /* Optional: add space between outline and element */
+}
+
+/* Button active (expanded) state */
+.year-toggle.active {
+    background-color: #01be60; /* Change to a different color when active */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .year-toggle {
+        flex: 0; /* Disable flex growth */
+        width: 150px; /* Set a fixed width */
+        min-width: 150px; /* Ensure minimum width */
+        max-width: 150px; /* Ensure maximum width */
+        padding: 15px 20px; /* Adjust padding for a more square shape */
+        font-size: 1.5rem; /* Increase font size */
+    }
+
+    .year-buttons {
+        justify-content: center; /* Center the buttons */
+		gap: 30px;
+    }
+}
+
+.events-container {
+    margin-left: 20px;
+    border-left: 2px solid #ddd;
+    padding-left: 10px;
+	overflow: hidden;
+    max-height: 0; /* Start with zero height */
+}
+
+.events-container.expanded {
+    max-height: 1000px; /* Adjust this as needed for your content */
+}
+
+html {
+    scroll-behavior: smooth;
+}

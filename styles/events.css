@@ -748,14 +748,6 @@ section
 	color: #181818;
 	text-transform: uppercase;
 }
-.section_subtitle
-{
-	font-family: 'Old Standard TT', serif;
-	font-size: 16px;
-	color: #7c7c7c;
-	font-style: italic;
-	margin-top: 5px;
-}
 .about_row
 {
 	margin-top: 52px;

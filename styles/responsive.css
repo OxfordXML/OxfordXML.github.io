@@ -297,7 +297,12 @@
 	}
 	.home_text
 	{
-		font-size: 16px;
+		font-size: 24px;
+		padding-left: 20px; /* Less padding for smaller screens */
+	  	padding-right: 20px; /* Less padding for smaller screens */
+	}
+	.home_content {
+	  top: 20%; /* Adjust top position for smaller screens */
 	}
 	.mission
 	{
@@ -327,11 +332,11 @@
 11. 575px
 ************/
 
-@media only screen and (max-width: 575px)
+@media only screen and (max-width: 768px)
 {
 	p
 	{
-		font-size: 14px;
+		font-size: 18px;
 	}
 	.header .header_content
 	{
@@ -400,11 +405,11 @@
 	}
 	.section_title
 	{
-		font-size: 24px;
+		font-size: 30px;
 	}
 	.section_subtitle
 	{
-		font-size: 14px;
+		font-size: 30px;
 	}
 	.sermon_links ul li
 	{
@@ -445,6 +450,14 @@
 	.donation_current, .donation_goal
 	{
 		font-size: 16px;
+	}
+	.quote_quote
+	{
+		font-size: 26px;
+	}
+	.section_cta
+	{
+		font-size: 18px;
 	}
 }
 

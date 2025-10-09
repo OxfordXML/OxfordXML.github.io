@@ -367,10 +367,6 @@
 	{
 		font-size: 24px;
 	}
-	.section_subtitle
-	{
-		font-size: 14px;
-	}
 	.events_items
 	{
 		padding-left: 15px;
@@ -382,7 +378,7 @@
 	}
 	.quote_quote
 	{
-		font-size: 22px;
+		font-size: 40px;
 	}
 }
 

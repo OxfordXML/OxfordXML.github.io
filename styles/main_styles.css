@@ -721,7 +721,41 @@ section
 /*********************************
 6. Event
 *********************************/
+.upcoming
+{
+	padding-top: 89px;
+	padding-bottom: 100px;
+	background: #FFFFFF;
+}
+@media only screen and (max-width: 768px) {
+	.upcoming {	
+		padding-bottom: 10px;
+	}
 
+	.events {	
+		padding-bottom: 10px !important;
+	}
+}
+.section_title
+{
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.185;
+	color: #181818;
+	text-transform: uppercase;
+}
+.about_row
+{
+	margin-top: 52px;
+}
+.upcoming_image
+{
+	width: 100%;
+}
+.upcoming_image img
+{
+	max-width: 100%
+}
 .event
 {
 	width: 100%;	
@@ -737,29 +771,39 @@ section
     flex-direction: column; /* Stack elements on mobile */
     align-items: center; /* Center the items */
 	margin-top: 0;
+	padding-left: 30px;
+	padding-top: 18px;
 }
 
 .event_date {
-	background: #b10707;
-	border-radius: 6px;
-	flex-direction: column;
-    width: 100%; /* Full width on mobile */
-    margin-left: 0; /* Remove negative margin */
-    padding: 10px;
-    display: flex;
-    justify-content: center; /* Center content */
-    align-items: center;
-	height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+  padding: 8px;
+
+  background: #b10707;
+  border-radius: 6px;
 }
 
-.event_date h3,
-.event_date h4,
-.event_date h5 {
-    font-size: 17px; /* Adjust font size for mobile */
-    color: white;
-    line-height: 0.9; /* Adjust line-height to prevent cropping */
-	width: auto; /* Remove fixed width if set */
-    height: auto; /* Remove fixed height if set */
+.event_date .event_day {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+  margin: 0;
+}
+
+.event_date .event_month,
+.event_date .event_year {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.1;
+  margin: 0;
+  text-transform: uppercase; /* for OCT, optional */
 }
 
 .upcoming_image {
@@ -805,6 +849,10 @@ h3.event_day, h4.event_month, h5.event_year {
     text-align: flex-start;
     padding: 0 10px;
 	width: 85%;
+}
+.event_title
+{
+	margin-top: -5px;
 }
 .event_title,
 .event_title a
@@ -1506,6 +1554,37 @@ h3.event_day, h4.event_month, h5.event_year {
     padding: 20px 0;
 }
 
+.footer_social ul
+{
+	margin-right: -10px;
+}
+.footer_social ul li
+{
+	display: inline-block;
+}
+.footer_social ul li:not(:last-child)
+{
+	margin-right: 8px;
+}
+.footer_social ul li a i
+{
+	font-size: 15px;
+	padding: 10px;
+	color: #FFFFFF;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.footer_social ul li a i:hover
+{
+	color: #b10707;
+}
+.footer_contact
+{
+	margin-top: 33px;
+}
 /* Contact Section Styling */
 .footer_contact_column {
     padding-top: 54px;
@@ -1539,15 +1618,25 @@ h3.event_day, h4.event_month, h5.event_year {
     color: #1e90ff; /* Darker blue on hover */
     text-decoration: none;
 }
-
+.footer_contact_column
+{
+	padding-top: 54px;
+}
 /* Footer logo and other text styles */
 .footer_logo_text {
+	display: inline-block;
     font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 0.75;
-    color: #FFFFFF;
-    margin-left: 7px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 0.75;
+	color: #FFFFFF;
+	vertical-align: middle;
+	margin-left: 7px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
 }
 
 .footer_links_list li a {
@@ -1785,4 +1874,45 @@ h3.event_day, h4.event_month, h5.event_year {
 
 html {
     scroll-behavior: smooth;
+}
+
+/* DATE BADGE — works with your existing HTML */
+.event_date {
+  background: #b10707;
+  border-radius: 10px;
+  width: 76px !important;    /* beats the 50x50 rule */
+  height: 76px !important;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* normalize the inner bootstrap wrapper */
+.event_date > .d-flex {
+  width: 100%;
+  height: 100%;
+  display: flex;              /* override any bootstrap quirks */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+/* text inside (uses your existing .event_day and .event_month) */
+.event_date .event_day {
+  color: #fff;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1;
+  margin: 0;
+}
+
+.event_date .event_month {
+  color: #fff;
+  text-transform: uppercase;  /* "Nov 2024" -> "NOV 2024" */
+  font-size: 18px;
+  line-height: 1.05;
+  margin: 0;
+  white-space: nowrap;        /* keep it on one line since month+year are in one div */
 }

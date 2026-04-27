@@ -17,14 +17,10 @@
 5. Home
 6. Event
 7. About
-8. Sermons
-9. Mission
-10. Events
-11. Donations
-12. Quote
-13. Gallery
-14. Latest News
-15. Footer
+8. Mission
+9. Events
+10. Quote
+11. Footer
 
 
 
@@ -780,19 +776,27 @@ section
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  width: 70px;
-  height: 70px;
+  width: 76px;
+  height: 76px;
   padding: 8px;
-
   background: #b10707;
-  border-radius: 6px;
+  border-radius: 10px;
+}
+
+.event_date > .d-flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
 }
 
 .event_date .event_day {
   color: #fff;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 1;
   margin: 0;
 }
@@ -800,10 +804,11 @@ section
 .event_date .event_month,
 .event_date .event_year {
   color: #fff;
-  font-size: 16px;
-  line-height: 1.1;
+  font-size: 18px;
+  line-height: 1.05;
   margin: 0;
-  text-transform: uppercase; /* for OCT, optional */
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .upcoming_image {
@@ -1715,10 +1720,6 @@ h3.event_day, h4.event_month, h5.event_year {
         align-items: flex-start;
     }
 	
-    .event_date {
-        width: auto; /* Auto width on desktop */	
-    }
-
     .event_date h3,
     .event_date h4,
     .event_date h5 {
@@ -1731,15 +1732,6 @@ h3.event_day, h4.event_month, h5.event_year {
         object-fit: cover;
     }
 
-	.upcoming_image_debaters {
-		width: 100%; /* Make image responsive */
-    	height: auto; /* Maintain aspect ratio */
-    	display: block; /* Makes the image a block-level element */
-    	margin-left: auto; /* Auto margin on the left */
-    	margin-right: auto; /* Auto margin on the right */
-		margin-bottom: 0; /* Adjust or remove the bottom margin */
-		object-fit: cover;
-	}
 }
 
 .upcoming_image_debaters {
@@ -1807,6 +1799,11 @@ h3.event_day, h4.event_month, h5.event_year {
     border-bottom: 1px solid #ddd;
     font-size: 16px;
 }
+
+.about-cta {
+    font-size: 120%;
+    padding-top: 20px;
+}
 .bio-abstract {
     margin-top: 0;
     margin-bottom: 0;
@@ -1826,14 +1823,15 @@ h3.event_day, h4.event_month, h5.event_year {
     font-size: 1rem;
     border-radius: 5px;
     outline: none;
-    flex: 1; /* Make all buttons the same width */
+    flex: 1;
     text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .year-buttons {
     display: flex;
-    gap: 10px; /* Space between buttons */
-    margin-bottom: 20px; /* Space below the buttons */
+    gap: 10px;
+    margin-bottom: 20px;
 	margin-top: 40px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -1842,8 +1840,7 @@ h3.event_day, h4.event_month, h5.event_year {
 
 /* Button hover effect */
 .year-toggle:hover {
-    background-color: #8a0c0c; /* Slightly darker red for hover */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    background-color: #8a0c0c;
 }
 
 .year-toggle:focus,
@@ -1887,51 +1884,7 @@ h3.event_day, h4.event_month, h5.event_year {
     max-height: 0; /* Start with zero height */
 }
 
-.events-container.expanded {
-    max-height: 1000px; /* Adjust this as needed for your content */
-}
-
 html {
     scroll-behavior: smooth;
 }
 
-/* DATE BADGE — works with your existing HTML */
-.event_date {
-  background: #b10707;
-  border-radius: 10px;
-  width: 76px !important;    /* beats the 50x50 rule */
-  height: 76px !important;
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* normalize the inner bootstrap wrapper */
-.event_date > .d-flex {
-  width: 100%;
-  height: 100%;
-  display: flex;              /* override any bootstrap quirks */
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-}
-
-/* text inside (uses your existing .event_day and .event_month) */
-.event_date .event_day {
-  color: #fff;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1;
-  margin: 0;
-}
-
-.event_date .event_month {
-  color: #fff;
-  text-transform: uppercase;  /* "Nov 2024" -> "NOV 2024" */
-  font-size: 18px;
-  line-height: 1.05;
-  margin: 0;
-  white-space: nowrap;        /* keep it on one line since month+year are in one div */
-}

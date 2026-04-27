@@ -4,7 +4,7 @@
 <title>OxfordXML: The Cross-disciplinary Machine Learning Community</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Demo project">
+<meta name="description" content="OxfordXML is a cross-disciplinary machine learning research cluster at Wolfson College, University of Oxford, hosting termtime talks across fields including healthcare, physics, finance, and social sciences.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css?v=1.9">
@@ -90,7 +90,7 @@
 
 	<!-- Home -->
 	<div class="home">
-		<div class="home_background" style="background-image:url(images/Wolfson.jpg)" alt="Wolfson College Oxford">
+		<div class="home_background" style="background-image:url(images/Wolfson.jpg)">
 			<div class="home_content text-center">
 				<div class="container">
 					<div class="row">
@@ -149,8 +149,7 @@
 	</div>
 
 	<!-- Upcoming Event -->
-	<a name="events"></a>
-	<div class="upcoming">
+	<div class="upcoming" id="events">
 		<div class="container">
 
 			<!-- Introduction -->
@@ -193,9 +192,9 @@
 								<!-- Speaker Name -->
 								<!-- Speakers: Dr Simon Fries and Dominik Lukeš<br/> -->
 								<!-- Time -->
-								<!-- <img src="images/calendar.png" alt="Calendar Icon"> Time: 18:00-19:00<br/> -->
+								<!-- <img src="images/calendar.png" alt="Date"> Time: 18:00-19:00<br/> -->
 								<!-- Location & Teams Link -->
-								<!-- <img src="images/location.png" alt="Location Icon"> Levett Room, Wolfson College & Online <a href="https://teams.microsoft.com/meet/362089785203753?p=XViRKq0WEngxTPuI44" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">(Teams link)</a>.<br/>
+								<!-- <img src="images/location.png" alt="Location"> Levett Room, Wolfson College & Online <a href="https://teams.microsoft.com/meet/362089785203753?p=XViRKq0WEngxTPuI44" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">(Teams link)</a>.<br/>
 							</p> -->
 							<!-- Speaker Bio -->
 							<!-- <p class="bio-abstract"><b>Biography:</b></p>
@@ -251,16 +250,16 @@
 			                    <!-- Activity Type -->
 			                    <!-- <img src="images/logo.png" width="15" height="15" alt="logo"> Activity Type: Workshop<br/> -->
 			                    <!-- Time -->
-			                    <!-- <img src="images/calendar.png" alt="Calendar Icon"> Date: 5th October | Time: 09:30-16:00<br/> -->
+			                    <!-- <img src="images/calendar.png" alt="Date"> Date: 5th October | Time: 09:30-16:00<br/> -->
 			                    <!-- Location & Teams Link -->
-			                    <!-- <img src="images/location.png" alt="Location Icon"> Buttery, Wolfson College. Places are limited, therefore <a href="https://forms.gle/uXFAFZCEJPnhqZK16" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">BOOKING IS ESSENTIAL.</a><br/>
+			                    <!-- <img src="images/location.png" alt="Location"> Buttery, Wolfson College. Places are limited, therefore <a href="https://forms.gle/uXFAFZCEJPnhqZK16" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">BOOKING IS ESSENTIAL.</a><br/>
 			                    <br/> -->
 			                    <!-- Activity Type-->
 			                    <img src="images/logo.png" width="15" height="15" alt="logo"> Activity Type: Discussion<br/>
 			                    <!-- Time -->
-			                    <img src="images/calendar.png" alt="Calendar Icon"> Time: 18:00-19:00<br/>
+			                    <img src="images/calendar.png" alt="Date"> Time: 18:00-19:00<br/>
 			                    <!-- Location & Teams Link -->
-			                    <img src="images/location.png" alt="Location Icon"> Levett Room, Wolfson College & Online <a href="https://teams.microsoft.com/meet/362089785203753?p=XViRKq0WEngxTPuI44" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">(Teams link)</a>.<br/>
+			                    <img src="images/location.png" alt="Location"> Levett Room, Wolfson College & Online <a href="https://teams.microsoft.com/meet/362089785203753?p=XViRKq0WEngxTPuI44" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">(Teams link)</a>.<br/>
 							</p>
 			                <!-- Abstract -->
 			                <p>
@@ -287,12 +286,11 @@
 	</div>
 	
 	<!-- Past Events -->
-	<a name="events"></a>
-	<div class="events">
+	<div class="events" id="past-events">
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
-						<h2 class="section_title">Past events (2022-2024)</h2>
+						<h2 class="section_title">Past events (2022-2026)</h2>
 						<p class="section_subtitle centered-text">Events held and scheduled by us</p>
 						<p class="section_cta centered-text">
 							<strong>Watch recordings of past events on our <a href="https://www.youtube.com/@OxfordXML-kg1kp/playlists" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">YouTube channel</a>.</strong>
@@ -302,10 +300,68 @@
 		</div>
 
 		<div class="year-buttons">
+			<button class="year-toggle" data-year="year2026">2026</button>
 			<button class="year-toggle" data-year="year2025">2025</button>
 			<button class="year-toggle" data-year="year2024">2024</button>
 			<button class="year-toggle" data-year="year2023">2023</button>
 			<button class="year-toggle" data-year="year2022">2022</button>
+		</div>
+
+		<!-- Events from 2026 -->
+		<div id="year2026" class="events-container">
+			<div class="events_items d-flex flex-lg-row flex-column align-items-lg-start align-items-center justify-content-lg-between justify-content-center flex-wrap">
+
+				<div class="events_item">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
+						<div class="event_date">
+							<div class="d-flex flex-column align-items-center justify-content-center">
+								<div class="event_day">30</div>
+								<div class="event_month">Apr 2026</div>
+							</div>
+						</div>
+						<div class="event_content">
+							<div class="event_title">Human Language Meets AI - A Conversation on Language and Large Language Models</div>
+							Dr Simon Fries and Dominik Lukeš<br/>
+							<ul class="event_row">
+								<li>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
+									<span>06:00 PM - 07:00 PM</span>
+								</li>
+								<li>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
+									<span>Levett Room, Wolfson College</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="events_item">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
+						<div class="event_date">
+							<div class="d-flex flex-column align-items-center justify-content-center">
+								<div class="event_day">1</div>
+								<div class="event_month">Jan 2026</div>
+							</div>
+						</div>
+						<div class="event_content">
+							<div class="event_title">Template Event Title</div>
+							Template Speaker Name<br/>
+							<ul class="event_row">
+								<li>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
+									<span>05:30 PM - 06:30 PM</span>
+								</li>
+								<li>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
+									<span>Wolfson College</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
 		</div>
 
 		<!-- Events from 2025 -->
@@ -313,7 +369,7 @@
 			<div class="events_items d-flex flex-lg-row flex-column align-items-lg-start align-items-center justify-content-lg-between justify-content-center flex-wrap">
 				
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">20</div>
@@ -325,11 +381,11 @@
 							Konstantin Hemker<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:30 PM - 06:30 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -338,7 +394,7 @@
 				</div>
 
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">13</div>
@@ -350,11 +406,11 @@
 							Tim Reichelt<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:30 PM - 06:30 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -363,7 +419,7 @@
 				</div>
 
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">30</div>
@@ -375,11 +431,11 @@
 							Ayush Noori<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:30 PM - 06:30 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -388,7 +444,7 @@
 				</div>
 
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">14</div>
@@ -400,11 +456,11 @@
 							 Dr Ulrik Juul Christensen and Jessica White<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>02:00 PM - 03:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -413,7 +469,7 @@
 				</div>
 
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">19</div>
@@ -425,11 +481,11 @@
 							 Ahmed Osman<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>06:00 PM - 07:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -438,7 +494,7 @@
 				</div>
 
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">10</div>
@@ -450,11 +506,11 @@
 							Mustafa Alghali<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>01:00 PM - 02:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -463,7 +519,7 @@
 				</div>
 				
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">29</div>
@@ -475,11 +531,11 @@
 							Dr Sepideh Chakaveh<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>01:00 PM - 02:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -488,7 +544,7 @@
 				</div>
 
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">6</div>
@@ -500,11 +556,11 @@
 							Andrew Soltan<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>06:00 PM - 07:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -513,7 +569,7 @@
 				</div>
 
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">25</div>
@@ -525,11 +581,11 @@
 							Dr Brad Segal<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>06:00 PM - 07:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -538,7 +594,7 @@
 				</div>
 
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">6</div>
@@ -550,11 +606,11 @@
 							Dr Sepideh Chakaveh<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>06:00 PM - 07:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -570,7 +626,7 @@
 			<div class="events_items d-flex flex-lg-row flex-column align-items-lg-start align-items-center justify-content-lg-between justify-content-center flex-wrap">
 				
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">26</div>
@@ -582,11 +638,11 @@
 							Dominik Lukeš<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:30 PM - 06:30 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -595,7 +651,7 @@
 				</div>
 
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">7</div>
@@ -607,11 +663,11 @@
 							Dr. Talfan Evans<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:00 PM - 06:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -620,7 +676,7 @@
 				</div>
 
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">23</div>
@@ -632,11 +688,11 @@
 							Jessica White<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:00 PM - 06:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -645,7 +701,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">19</div>
@@ -657,11 +713,11 @@
 							Margaret O'Rorke & Dr. Yi Yin<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>07:00 PM - 09:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -670,7 +726,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">16</div>
@@ -682,11 +738,11 @@
 							Prof Paul Leeson<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:00 PM - 06:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -695,7 +751,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">5</div>
@@ -707,11 +763,11 @@
 							Rainy Dong<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:30 PM - 06:30 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -720,7 +776,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">30</div>
@@ -732,11 +788,11 @@
 							Madhu Vankadari<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:30 PM - 06:30 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -745,7 +801,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">23</div>
@@ -757,11 +813,11 @@
 							Abhirup Banerjee<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:00 PM - 06:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -770,7 +826,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">15</div>
@@ -782,11 +838,11 @@
 							Lei Lu<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:00 PM - 06:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -795,7 +851,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">1</div>
@@ -807,11 +863,11 @@
 							George R Barker<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>01:00 PM - 02:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -820,7 +876,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">21</div>
@@ -833,11 +889,11 @@
 							Recording of the seminar can be viewed <a href="https://www.youtube.com/watch?v=fOmpzsTgIw4&list=PLwp6UV88vDmfywRp1ctUoxMVYk0_540EO&index=4" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">here</a>.
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:00 PM - 06:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -846,7 +902,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">13</div>
@@ -858,11 +914,11 @@
 							Prof Jesus Lizana<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:00 PM - 06:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -871,7 +927,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">7</div>
@@ -884,11 +940,11 @@
 							Recording of the seminar can be viewed <a href="https://www.youtube.com/watch?v=9NY72UnAs-0&list=PLwp6UV88vDmfywRp1ctUoxMVYk0_540EO&index=1" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">here</a>.
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:00 PM - 06:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -897,7 +953,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">6</div>
@@ -910,11 +966,11 @@
 							Recording of the seminar can be viewed <a href="https://www.youtube.com/watch?v=nQvaBtQehwI&list=PLwp6UV88vDmfywRp1ctUoxMVYk0_540EO&index=6" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">here</a>.
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>01:00 PM - 02:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -923,7 +979,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">27</div>
@@ -936,11 +992,11 @@
 							Recording of the seminar can be viewed <a href="https://www.youtube.com/watch?v=s70C0IlLPgg&list=PLwp6UV88vDmfywRp1ctUoxMVYk0_540EO&index=7" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">here</a>.
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:00 PM - 06:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -949,7 +1005,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">19</div>
@@ -961,11 +1017,11 @@
 							Dr Huizhi Liang<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>01:00 PM - 02:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -974,7 +1030,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">15</div>
@@ -986,11 +1042,11 @@
 							Dr Rasheda Chowdhury<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>01:00 PM - 02:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -999,7 +1055,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">8</div>
@@ -1013,11 +1069,11 @@
 							Recording of the seminar can be viewed <a href="https://www.youtube.com/watch?v=a_K6o1Dk2u8&list=PLwp6UV88vDmfywRp1ctUoxMVYk0_540EO&index=2" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">here</a>.
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:00 PM - 07:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Engineering Science Department, Thom Building</span>
 								</li>
 							</ul>
@@ -1026,7 +1082,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">31</div>
@@ -1039,11 +1095,11 @@
 							Recording of the seminar can be viewed <a href="https://www.youtube.com/watch?v=cQaEYDf1VBM&list=PLwp6UV88vDmfywRp1ctUoxMVYk0_540EO&index=3" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">here</a>.
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:00 PM - 06:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -1052,7 +1108,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">24</div>
@@ -1065,11 +1121,11 @@
 							Recording of the seminar can be viewed <a href="https://www.youtube.com/watch?v=wp9UJQvixVw&list=PLwp6UV88vDmfywRp1ctUoxMVYk0_540EO&index=8" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">here</a>.
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>05:00 PM - 06:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -1078,7 +1134,7 @@
 				</div>
 				
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">17</div>
@@ -1091,11 +1147,11 @@
 							Recording of the seminar can be viewed <a href="https://www.youtube.com/watch?v=nLvH9XskX-E&list=PLwp6UV88vDmfywRp1ctUoxMVYk0_540EO&index=5" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">here</a>.
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>06:00 PM - 07:00 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -1104,7 +1160,7 @@
 				</div>
 				<!-- Blank - invisible Calendar - for aligning items if there's an odd number of items -->
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_content">
 							<div class="event_title"></div>
 							<ul class="event_row">
@@ -1123,7 +1179,7 @@
 			<div class="events_items d-flex flex-lg-row flex-column align-items-lg-start align-items-center justify-content-lg-between justify-content-center flex-wrap">
 			
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">06</div>
@@ -1135,11 +1191,11 @@
 							Dr Fabio Pizzati<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>01:00 PM - 02:30 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -1148,7 +1204,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">30</div>
@@ -1160,11 +1216,11 @@
 							Ms Émilie Pagé-Perron<br/>
 							<ul class="event_row">
 								<li>
-									<div class="event_icon"><img src="images/calendar.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/calendar.png" alt="Date"></div>
 									<span>01:00 PM - 02:30 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -1173,7 +1229,7 @@
 				</div>
 				
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">23</div>
@@ -1189,7 +1245,7 @@
 									<span>01:00 PM - 02:30 PM</span>
 								</li>
 								<li>
-									<div class="event_icon"><img src="images/location.png" alt="Wolfson College"></div>
+									<div class="event_icon"><img src="images/location.png" alt="Location"></div>
 									<span>Wolfson College</span>
 								</li>
 							</ul>
@@ -1198,7 +1254,7 @@
 				</div>
 				
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">25</div>
@@ -1223,7 +1279,7 @@
 				</div>	
 			
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">13</div>
@@ -1248,7 +1304,7 @@
 				</div>	
 			
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">2</div>
@@ -1273,7 +1329,7 @@
 				</div>	
 			
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">26</div>
@@ -1298,7 +1354,7 @@
 				</div>	
 			
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">19</div>
@@ -1323,7 +1379,7 @@
 				</div>	
 			
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">13</div>
@@ -1350,7 +1406,7 @@
 				</div>	
 			
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">21</div>
@@ -1376,7 +1432,7 @@
 				</div>	
 				
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">9</div>
@@ -1401,7 +1457,7 @@
 				</div>	
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">19</div>
@@ -1426,7 +1482,7 @@
 				</div>
 			
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">12</div>
@@ -1451,7 +1507,7 @@
 				</div>
 				<!-- Blank - invisible Calendar -->
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_content">
 							<div class="event_title"></div>
 							<ul class="event_row">
@@ -1471,7 +1527,7 @@
 			<div class="events_items d-flex flex-lg-row flex-column align-items-lg-start align-items-center justify-content-lg-between justify-content-center flex-wrap">
 				
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">12</div>
@@ -1496,7 +1552,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">21</div>
@@ -1521,7 +1577,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">30</div>
@@ -1546,7 +1602,7 @@
 				</div>
 	
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">15</div>
@@ -1567,7 +1623,7 @@
 				</div>
 				
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_date">
 							<div class="d-flex flex-column align-items-center justify-content-center">
 								<div class="event_day">26</div>
@@ -1588,7 +1644,7 @@
 				</div>
 				<!-- Blank - invisible Calendar -->
 				<div class="events_item">
-					<div class="events_item_content d-flex flex-row align-items-start justfy-content-start">
+					<div class="events_item_content d-flex flex-row align-items-start justify-content-start">
 						<div class="event_content">
 							<div class="event_title"></div>
 							<ul class="event_row">
@@ -1644,9 +1700,9 @@
 									<li>Hussein Ibrahim (MSc Student in Applied Digital Health) - Research focus on Health ML/AI</li>
 								</ul>
 							</div>
-							<div style="font-size:120%;padding-top:20px"><strong>To join our mailing list: <a href="https://forms.gle/Bw6SAUbNVviCyPFn9"  target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">CLICK HERE</a> </strong></div>
-							<div style="font-size:120%;padding-top:20px"><strong>Please fill in <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_CucK2CQPXiGKVJd2mi-S_zx_TN-7DmrzSXhBWe0uQOF_vw/viewform?pli=1" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">this form</a> if you're interested in joining as a student affiliate.</strong></div>
-					        <div style="font-size:120%;padding-top:20px"><strong>Contact us below if you are interested in speaking at our events</strong></div>
+							<div class="about-cta"><strong>To join our mailing list: <a href="https://forms.gle/Bw6SAUbNVviCyPFn9"  target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">CLICK HERE</a> </strong></div>
+							<div class="about-cta"><strong>Please fill in <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_CucK2CQPXiGKVJd2mi-S_zx_TN-7DmrzSXhBWe0uQOF_vw/viewform?pli=1" target="_blank" rel="noopener noreferrer" aria-label="Opens in a new tab">this form</a> if you're interested in joining as a student affiliate.</strong></div>
+					        <div class="about-cta"><strong>Contact us below if you are interested in speaking at our events</strong></div>
 						</div>
 					</div>
 				</div>
@@ -1655,8 +1711,7 @@
 	</div>
 
 	<!-- Footer -->
-	<a name="contact"></a>
-	<footer class="footer" style="background-color:gray">
+	<footer class="footer" id="contact">
 		<div class="container">
 			
 			<div class="row">

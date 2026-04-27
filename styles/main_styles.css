@@ -1752,6 +1752,25 @@ h3.event_day, h4.event_month, h5.event_year {
 	object-fit: cover;
 }
 
+.poster_link {
+    display: block;
+    cursor: zoom-in;
+}
+
+.poster_caption {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: #7c7c7c;
+    font-style: italic;
+    margin-top: 8px;
+    transition: color 200ms ease;
+}
+
+.poster_link:hover .poster_caption {
+    color: #b10707;
+}
+
 .centered-text {
     text-align: center;
 }

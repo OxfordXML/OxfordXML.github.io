@@ -1763,6 +1763,35 @@ h3.event_day, h4.event_month, h5.event_year {
     color: #b10707;
 }
 
+/* Joint event: speaker photo + workshop banner side by side, equal height */
+.joint_event_images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.joint_event_images .poster_link {
+    display: flex;
+}
+.joint_event_image {
+    height: 180px;
+    width: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 6px;
+}
+/* Stack vertically and scale to width on smaller screens */
+@media (max-width: 991px) {
+    .joint_event_image {
+        height: auto;
+        max-width: 100%;
+    }
+    .joint_speaker_image {
+        max-width: 280px;
+    }
+}
+
 .centered-text {
     text-align: center;
 }
